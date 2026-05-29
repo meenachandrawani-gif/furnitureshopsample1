@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { MessageCircle, Sparkles, X, Send } from 'lucide-react';
+import { Sparkles, X, Send } from 'lucide-react';
 import React, { useState } from 'react';
 
 export default function FloatingActions() {
@@ -28,18 +28,6 @@ export default function FloatingActions() {
   return (
     <>
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
-        {/* WhatsApp Button */}
-        <motion.button 
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-12 h-12 bg-[#25D366] rounded-full text-white shadow-xl flex items-center justify-center relative group"
-        >
-          <MessageCircle className="w-6 h-6" />
-          <span className="absolute right-16 bg-brand-beige text-brand-black text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-brand-black/5 shadow-md">
-            WhatsApp Us
-          </span>
-        </motion.button>
-
         {/* AI Chatbot Button */}
         <motion.button 
           whileHover={{ scale: 1.05 }}
